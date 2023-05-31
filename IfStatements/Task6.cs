@@ -4,8 +4,26 @@
     {
         public static int DoSomething(int i)
         {
-            // TODO Implement the method.
-            throw new NotImplementedException();
+            if (i < -3)
+            {
+                return i;
+            }
+            else if (i >= -3 && i < 0)
+            {
+                return i + (2 * i);
+            }
+            else if (i == 0)
+            {
+                return 0;
+            }
+            else if (i > 0 && i <= 3)
+            {
+                return i - (i * i);
+            }
+            else
+            {
+                return i;
+            }
         }
     }
 }

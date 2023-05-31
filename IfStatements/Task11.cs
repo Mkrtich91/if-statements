@@ -1,11 +1,59 @@
-﻿namespace IfStatements
+﻿using System.Net.Http.Headers;
+
+namespace IfStatements
 {
     public static class Task11
     {
         public static int DoSomething(bool b1, bool b2, int i)
         {
-            // TODO Implement the method.
-            throw new NotImplementedException();
+            if (b1 && b2 && i == 0)
+            {
+                return 1;
+            }
+            else if (b1 && !b2 && i == 0)
+            {
+                return -1;
+            }
+            else if (b1 && b2 && i >= 4 && i < 8)
+            {
+                return 2 * i;
+            }
+            else if (b1 && !b2 && i > 3 && i <= 7)
+            {
+                return 10 - (i * 2);
+            }
+            else if (b1 && b2 && i < -4 && i >= -8)
+            {
+                return 3 * i;
+            }
+            else if (b1 && !b2 && i <= -3 && i > -7)
+            {
+                return 10 + (i * 3);
+            }
+            else if (!b1 && i == 0)
+            {
+                return 1;
+            }
+            else if (!b1 && b2 && (i < -8 || i >= 8))
+            {
+                return i - (i * i);
+            }
+            else if (!b1 && !b2 && (i <= -7 || i > 7))
+            {
+                return i - (i * i * i);
+            }
+            else if (!b1 && b2 && i != 0 && i > -4 && i <= 4)
+            {
+                return (i * i) - (i * i * i);
+            }
+            else if (!b1 && !b2 && i != 0 && i >= -3 && i < 3)
+            {
+                return (i * i * i) - (i * i);
+            }
+            else
+            {
+                return i;
+            }
         }
     }
 }

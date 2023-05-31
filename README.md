@@ -425,39 +425,6 @@ Implement the [DoSomething](IfStatements/Task11.cs#L5) method in the _Task11_ cl
 
 ![Task 11 Flowchart](images/task11.png)
 
-The expected results table has method outputs for different values of the _b1_, _b2_ and _i_ input parameters.
-
-| b1    | b2    | i              | Expected Result       |
-|-------|-------|----------------|-----------------------|
-| true  | true  | (-&infin;, -8) | i                     |
-| true  | true  | [-8, -4)       | i * 3                 |
-| true  | true  | [-4, 0)        | i                     |
-| true  | true  | 0              | 1                     |
-| true  | true  | (0, 4)         | i                     |
-| true  | true  | [4, 8)         | i * 2                 |
-| true  | true  | [8, &infin;)   | i                     |
-| true  | false | (-&infin;, -7] | i                     |
-| true  | false | (-7, -3]       | 10 + (i * 3)          |
-| true  | false | (-3, 0)        | i                     |
-| true  | false | 0              | -1                    |
-| true  | false | (0, 3]         | i                     |
-| true  | false | (3, 7]         | 10 - (i * 2)          |
-| true  | false | (7, &infin;)   | i                     |
-| false | true  | (-&infin;, -8) | i - (i * i)           |
-| false | true  | [-8, -4]       | i                     |
-| false | true  | (-4, 0)        | (i * i) - (i * i * i) |
-| false | true  | 0              | 1                     |
-| false | true  | (0, 4]         | (i * i) - (i * i * i) |
-| false | true  | (4, 8)         | i                     |
-| false | true  | [8, &infin;)   | i - (i * i)           |
-| false | false | (-&infin;, -7] | i - (i * i * i)       |
-| false | false | (-7, -3)       | i                     |
-| false | false | [-3, -0)       | (i * i * i) - (i * i) |
-| false | false | 0              | 1                     |
-| false | false | (0, 3)         | (i * i * i) - (i * i) |
-| false | false | [3, 7]         | i                     |
-| false | false | (7, &infin;)   | i - (i * i * i)       |
-
 
 ### Sub-task 12
 
